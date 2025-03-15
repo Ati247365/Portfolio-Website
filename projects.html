@@ -3,177 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tlhowe Atisang's Portfolio - Web Developer and Machine Learning Enthusiast">
-  <meta name="keywords" content="web development, machine learning, portfolio, software developer">
-  <title>Tlhowe Atisang - Portfolio</title>
+  <title>Projects - Tlhowe Atisang</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   
-  <!-- Loading Spinner -->
-  <div id="loading-spinner" class="loading-spinner"></div>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+    <button id="toggle-dark-mode">Toggle Dark Mode</button>
+  </nav>
 
-  <div id="content">
-    <!-- Navigation Bar -->
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button id="toggle-dark-mode">Toggle Dark Mode</button>
-    </nav>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
 
-    <!-- Home Section -->
-    <section id="home">
-      <h1 id="typewriter"></h1>
-      <p>Hi, I'm <strong>Atisang Innocent Tlhowe</strong>, a final-year <strong>Bachelor of Computing</strong> student at Belgium Campus ITvarsity.</p>
-      <p class="tagline">"Transforming complex problems into intelligent solutions with AI-driven innovation."</p>
-      <div id="profile-picture"><img src="./images/profile-picture.png" alt="profile picture"></div>
-      <br>
-      <button id="download-cv-btn">Download CV</button><br>
-      <a href="#projects" id="browse-projects-btn">View Projects</a>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about">
-      <h2>About Me</h2>
+    <!-- Project 1: Call Center Client Management System -->
+    <div class="project-detail">
+      <h3>Call Center Client Management System</h3>
       <p>
-        I'm a passionate software developer with expertise in web development, databases, and machine learning. 
-        I have hands-on experience in building scalable web applications, designing databases, and integrating AI/ML solutions. 
-        My work spans across programming, software engineering, IoT systems, and cybersecurity.
+        A secure system for managing client information, featuring secure login, CRUD operations, and SMS API integration.
       </p>
-      <p>
-        I enjoy solving complex problems and building innovative solutions that make a real-world impact. 
-        My projects include client management systems, inventory tracking applications, and AI-driven energy management systems.
-      </p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-container">
-        <div class="skill">
-          <span><strong>Programming & Software Development</span></strong>
-          <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
-          <p>Languages: C#, Java, JavaScript, HTML, CSS</p>
-          <p>Frameworks & Tools: Visual Studio, VS Code, IntelliJ, NetBeans Apache</p>
-          <p>Principles: OOP, MVC/MVP, Agile Methodologies</p>
-        </div>
-        <div class="skill">
-          <span><strong>Database Management & SQL</span></strong>
-          <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-          <p>Databases: Microsoft SQL Server, PostgreSQL, MongoDB</p>
-          <p>Skills: Database design, CRUD operations, stored procedures, query optimization</p>
-        </div>
-        <div class="skill">
-          <span><strong>Web Development & UI/UX Design</span></strong>
-          <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
-          <p>Frontend: HTML, CSS, JavaScript</p>
-          <p>Backend: C# for web applications</p>
-          <p>UX/UI: Wireframing, high-fidelity prototypes, Canva</p>
-        </div>
-        <div class="skill">
-          <span><strong>Artificial Intelligence & Machine Learning</span></strong>
-          <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
-          <p>Concepts: Predictive modeling, AI integration</p>
-          <p>Tools: Jupyter Notebook</p>
-          <p>Use Cases: Solar energy prediction, financial AI suggestions</p>
-        </div>
-        <div class="skill">
-          <span><strong>Software Engineering & System Architecture</span></strong>
-          <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
-          <p>SDLC, Agile workflows (Jira), UML diagrams, MVP architecture</p>
-        </div>
-        <div class="skill">
-          <span><strong>IoT & Embedded Systems</span></strong>
-          <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
-          <p>IoT System Development: Solar monitoring dashboard, AI-driven energy management</p>
-          <p>Hardware & Sensor Integration</p>
-        </div>
-        <div class="skill">
-          <span><strong>Cybersecurity & Data Protection</span></strong>
-          <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
-          <p>Secure login implementations, data protection for client management systems</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Call Center Client Management System</h3>
-        <p>
-          A secure system for managing client information, featuring secure login, CRUD operations, and SMS API integration.
-        </p>
-        <a href="https://github.com/yourusername/client-management-system" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project">
-        <h3>Inventory Management System</h3>
-        <p>
-          A web-based system for tracking fruit inventory, built with C# and SQL Server.
-        </p>
-        <a href="https://github.com/yourusername/inventory-management" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project">
-        <h3>AI-Driven Solar Energy Management</h3>
-        <p>
-          An IoT system with a solar monitoring dashboard and AI-driven energy management.
-        </p>
-        <a href="https://github.com/yourusername/solar-energy-management" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project">
-        <h3>Premier Service Solutions</h3>
-        <p>
-          A technician management system with SMS API integration for service tracking.
-        </p>
-        <a href="https://github.com/yourusername/premier-service-solutions" target="_blank">View on GitHub</a>
-      </div>
-      <a href="projects.html" id="browse-projects-btn">View All Projects</a>
-    </section>
-
-    <!-- Call-to-Action Section -->
-    <section id="cta">
-      <h2>Let's Work Together</h2>
-      <p>Whether you're looking to hire me for a project or just want to connect, feel free to reach out!</p>
-      <a href="#contact" class="cta-button">Contact Me</a>
-      <a href="path/to/your/cv.pdf" download class="cta-button">Download CV</a>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out to me via email or LinkedIn:</p>
+      <h4>Technologies Used:</h4>
       <ul>
-        <li>Email: your.email@example.com</li>
-        <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+        <li>C#</li>
+        <li>Microsoft SQL Server</li>
+        <li>JavaScript</li>
+        <li>SMS API Integration</li>
       </ul>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+      <a href="https://github.com/yourusername/client-management-system" target="_blank">View on GitHub</a>
+    </div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+    <!-- Project 2: Inventory Management System -->
+    <div class="project-detail">
+      <h3>Inventory Management System</h3>
+      <p>
+        A web-based system for tracking fruit inventory, built with C# and SQL Server.
+      </p>
+      <h4>Technologies Used:</h4>
+      <ul>
+        <li>C#</li>
+        <li>Microsoft SQL Server</li>
+        <li>HTML/CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <a href="https://github.com/yourusername/inventory-management" target="_blank">View on GitHub</a>
+    </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+    <!-- Project 3: AI-Driven Solar Energy Management -->
+    <div class="project-detail">
+      <h3>AI-Driven Solar Energy Management</h3>
+      <p>
+        An IoT system with a solar monitoring dashboard and AI-driven energy management.
+      </p>
+      <h4>Technologies Used:</h4>
+      <ul>
+        <li>Python</li>
+        <li>Jupyter Notebook</li>
+        <li>IoT Sensors</li>
+        <li>AI/ML Algorithms</li>
+      </ul>
+      <a href="https://github.com/yourusername/solar-energy-management" target="_blank">View on GitHub</a>
+    </div>
 
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
+    <!-- Project 4: Premier Service Solutions -->
+    <div class="project-detail">
+      <h3>Premier Service Solutions</h3>
+      <p>
+        A technician management system with SMS API integration for service tracking.
+      </p>
+      <h4>Technologies Used:</h4>
+      <ul>
+        <li>C#</li>
+        <li>Microsoft SQL Server</li>
+        <li>SMS API Integration</li>
+      </ul>
+      <a href="https://github.com/yourusername/premier-service-solutions" target="_blank">View on GitHub</a>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Tlhowe Atisang. All rights reserved. | <a href="#home">Back to Top</a></p>
-    </footer>
-  </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Tlhowe Atisang. All rights reserved. | <a href="index.html">Back to Home</a></p>
+  </footer>
 
   <!-- External Scripts -->
   <script src="script.js"></script>
 </body>
-
 </html>
