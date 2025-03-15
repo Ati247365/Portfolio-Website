@@ -1,0 +1,375 @@
+/* Loading Spinner */
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #008080; /* Teal for spinner */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Gradient Background */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #c4bf30, #008080); /* Gradient background */
+    color: #333333; /* Dark gray text */
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: rgba(0, 51, 102, 0.8); /* Semi-transparent navy blue */
+    color: #FFFFFF; /* White text */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #FFD700; /* Gold on hover */
+  }
+  
+  /* Toggle Button Styles */
+  #toggle-dark-mode {
+    background-color: #008080; /* Teal */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #toggle-dark-mode:hover {
+    background-color: #006666; /* Darker teal on hover */
+  }
+  
+  #profile-picture img{
+    height: 15rem;
+    border-radius: 10px;
+    border: 10px solid rgb(52, 104, 157);
+  }
+  
+  /* Sections */
+  section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background-color: #FFFFFF; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #about{
+    background-color: #003366;
+    color: #E0E0E0;
+  }
+  
+  #about h2{
+    color: #E0E0E0;
+  }
+  
+  
+  
+  section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1, h2, h3 {
+    color: #003366; /* Navy blue headings */
+  }
+  
+  /* Home Section */
+  #home {
+    text-align: center;
+  }
+  
+  /* Home Section Buttons */
+  #download-cv-btn, #browse-projects-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem; /* Same padding for both buttons */
+    background-color: #008080; /* Teal */
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem; /* Ensure font size is the same */
+    width: auto; /* Allow buttons to adjust to their content */
+    text-align: center; /* Center text inside buttons */
+  }
+  
+  #download-cv-btn:hover, #browse-projects-btn:hover {
+    background-color: #006666; /* Darker teal on hover */
+  }
+  
+  /* Skills Section */
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .progress-bar {
+    background-color: #E0E0E0; /* Light gray */
+    border-radius: 5px;
+    height: 10px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background-color: #008080; /* Teal */
+    height: 100%;
+  }
+  
+  /* Projects Section */
+  .project {
+    margin-bottom: 1.5rem;
+  }
+  
+  .project a {
+    color: #008080; /* Teal */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .project a:hover {
+    color: #006666; /* Darker teal on hover */
+    text-decoration: underline;
+  }
+  
+  /* Call-to-Action Section */
+  #cta {
+    text-align: center;
+    padding: 2rem;
+    background-color: #003366; /* Navy blue */
+    color: #FFFFFF; /* White text */
+    border-radius: 8px;
+  }
+  
+  #cta h2{
+    color :#E0E0E0
+  }
+  
+  .cta-button {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #008080; /* Teal */
+    color: #FFFFFF; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #006666; /* Darker teal on hover */
+  }
+  
+  /* Contact Section */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  form label {
+    font-weight: bold;
+    color: #003366; /* Navy blue */
+  }
+  
+  form input, form textarea {
+    padding: 0.5rem;
+    border: 1px solid #E0E0E0; /* Light gray */
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #008080; /* Teal */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #006666; /* Darker teal on hover */
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #003366; /* Navy blue */
+    color: #FFFFFF; /* White text */
+    margin-top: 2rem;
+  }
+  
+  footer a {
+    color: #FFD700; /* Gold */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #E6B800; /* Darker gold on hover */
+    text-decoration: underline;
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode {
+    background: linear-gradient(135deg, #6f7337, #002244); /* Dark gradient background */
+    color: #F5F5F5; /* Light gray text */
+  }
+  
+  .dark-mode section {
+    background-color: #333333; /* Dark gray */
+    color: #F5F5F5; /* Light gray text */
+  }
+  
+  .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+    color: #FFD700; /* Gold for headings */
+  }
+  
+  .dark-mode nav {
+    background-color: rgba(0, 34, 68, 0.8); /* Semi-transparent darker navy blue */
+  }
+  
+  .dark-mode nav ul li a {
+    color: #F5F5F5; /* Light gray text */
+  }
+  
+  .dark-mode nav ul li a:hover {
+    color: #FFD700; /* Gold on hover */
+  }
+  
+  .dark-mode footer {
+    background-color: #002244; /* Darker navy blue */
+  }
+  
+  .dark-mode footer a {
+    color: #FFD700; /* Gold for footer links */
+  }
+  
+  .dark-mode footer a:hover {
+    color: #E6B800; /* Darker gold on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+  
+    section {
+      padding: 1rem;
+      margin: 1rem;
+    }
+  
+    #toggle-dark-mode {
+      margin-top: 1rem;
+    }
+  }
+  
+  /* Projects Detail Page Styles */
+  .project-detail {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #FFFFFF; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-detail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-detail p {
+    color: #333333; /* Dark gray text */
+  }
+  
+  .project-detail h3 {
+    color: #003366; /* Navy blue */
+    margin-bottom: 1rem;
+  }
+  
+  .project-detail h4 {
+    color: #008080; /* Teal */
+    margin-top: 1rem;
+  }
+  
+  .project-detail ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-detail ul li {
+    color: #555555; /* Medium gray */
+  }
+  
+  .project-detail a {
+    color: #008080; /* Teal */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .project-detail a:hover {
+    color: #006666; /* Darker teal on hover */
+    text-decoration: underline;
+  }
